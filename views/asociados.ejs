@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asociados</title>
+</head>
+<body>
+  <h1>Asociados</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID Asociado</th>
+        <th>Tipo de Identificación</th>
+        <!-- Agrega los demás encabezados aquí -->
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const asociado of asociados) { %>
+        <tr>
+          <td><%= asociado.id_asociado %></td>
+          <td><%= asociado.tipo_identificacion_asociado %></td>
+          <!-- Agrega las demás columnas aquí -->
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <a href="/dashboard">Regresar al Dashboard</a>
+</body>
+</html>
